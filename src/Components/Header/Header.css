@@ -1,0 +1,104 @@
+.Header_inicio_aside_boton {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  border-bottom: 2px solid #d9d9d9;
+  background-color: white;
+}
+
+.Header_inicio_titulo {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 16px;
+  color: #000;
+}
+
+.Header_inicio_boton {
+  font-size: 14px;
+  margin-right: 16px;
+  border: none;
+  background-color: red;
+  color: white;
+  height: 40px;
+  border-radius: 5px;
+  padding-inline: 10px;
+  cursor: pointer;
+}
+
+.Header_añadir_aside_boton {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  border-bottom: 2px solid #d9d9d9;
+  background-color: white;
+}
+
+.Header_añadir_header {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Header_añadir_titulo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.Header_añadir_boton_atras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+  font-size: 14px;
+  border: none;
+  color: #595959;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.Header_editar_aside_boton {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  border-bottom: 2px solid #d9d9d9;
+  background-color: white;
+}
+
+.Header_editar_header {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Header_editar_titulo {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.Header_editar_boton_atras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+  font-size: 14px;
+  border: none;
+  color: #595959;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: transparent;
+}

@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# Sistema de Gestión de Proyectos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este es un sistema de gestión de proyectos que permite crear, editar y eliminar tareas. La aplicación está construida con React, React-Select y SweetAlert.
 
-## Available Scripts
+## Características
 
-In the project directory, you can run:
+- Crear nuevas tareas
+- Editar tareas existentes
+- Eliminar tareas
+- Uso de React-Select para selección de opciones
+- Uso de SweetAlert para mostrar alertas y confirmaciones
 
-### `npm start`
+## Tecnologías Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- React-Select
+- SweetAlert
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Instalación
 
-### `npm test`
+Sigue estos pasos para clonar y ejecutar el proyecto en tu máquina local.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clona el repositorio:
 
-### `npm run build`
+   ```bash
+   git clone https://github.com/tu-usuario/sistema-gestion-proyectos.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navega al directorio del proyecto:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   cd sistema-gestion-proyectos
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Instala las dependencias del proyecto:
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Ejecutar
+   ```bash
+   npm start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Definición Funcional
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- El usuario accede a un administrador de proyectos para realizar la gestión, puede crearlos, editarlos y eliminarlos.
+- El usuario no puede submitear la creación o edición de un proyecto si los campos no están validados.
+- El usuario debe poder utilizar el gestor en Desktop y Mobile.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Definiciones Extras que no están en el Diseño
 
-## Learn More
+- El listado de proyectos puede tener un paginado.
+- El eliminar puede tener un modal que sugiera si está seguro de realizar la acción o no.
+- El listado de proyectos puede tener un buscador de la lista por nombre de proyecto.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Definiciones Técnicas
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Debe estar realizado en un framework de JS, Angular o React.
+- La aplicación debe estar publicada y debe ser accesible mediante un link (Ver Netlify, Heroku) o cualquier webserver.
+- El código de la aplicación debe estar subido a un repositorio de acceso público.

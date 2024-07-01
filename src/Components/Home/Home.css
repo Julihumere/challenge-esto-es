@@ -1,0 +1,57 @@
+.Inicio_container {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+}
+
+.Inicio_card {
+  width: 450px;
+  height: 680px;
+  background-color: #f0f2f5;
+}
+
+.Inicio_header {
+  height: 120px;
+}
+
+.Inicio_aside_logo {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-left: 20px;
+  border-bottom: 2px solid #d9d9d9;
+  background-color: white;
+}
+
+.Inicio_boton {
+  font-size: 14px;
+  margin-right: 16px;
+  border: none;
+  background-color: red;
+  color: white;
+  height: 40px;
+  border-radius: 5px;
+  padding-inline: 10px;
+  cursor: pointer;
+}
+
+.Inicio_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 520px;
+  overflow-y: scroll;
+}
+
+.Inicio_cards::-webkit-scrollbar {
+  display: none;
+}
+
+.Home_pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
