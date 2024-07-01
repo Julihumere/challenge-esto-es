@@ -19,7 +19,6 @@ export default function Inicio() {
   const changeScreen = (screen, id) => {
     if (screen == "edit") {
       const task = tasks.find((task) => task.id == id);
-      console.log(task);
       setTaskEdit(task);
     }
 
@@ -53,8 +52,6 @@ export default function Inicio() {
   };
 
   const searchTask = (text) => {
-    console.log(text == "");
-
     if (text == "") {
       setTasks(allTasks);
       return;
