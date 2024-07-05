@@ -7,6 +7,7 @@ import EditTask from "../EditTask/EditTask";
 import NewTask from "../NewTask/NewTask";
 import Swal from "sweetalert2";
 import Search from "../Search/Search";
+import Pagination from "../Pagination/Pagination";
 
 export default function Inicio() {
   const [tasks, setTasks] = useState([]);
@@ -64,6 +65,16 @@ export default function Inicio() {
     setTasks(newTasks);
   };
 
+  const [page, setPage] = useState(1);
+  const [taskPerPage, setTasksPerPage] = useState(4);
+  const lastTask = page * taskPerPage;
+  const firstTask = lastTask - taskPerPage;
+  const currentTask = tasks?.slice(firstTask, lastTask);
+
+  const pagination = (pageNum) => {
+    setPage(pageNum);
+  };
+
   return (
     <main className="Inicio_container">
       <div className="Inicio_card">
@@ -78,8 +89,8 @@ export default function Inicio() {
           <>
             <Search searchTask={searchTask} />
             <section className="Inicio_cards">
-              {tasks?.length > 0 ? (
-                tasks.map((tarea, index) => (
+              {currentTask?.length > 0 ? (
+                currentTask.map((tarea, index) => (
                   <Card
                     key={tarea.id}
                     tarea={tarea}
@@ -92,6 +103,13 @@ export default function Inicio() {
                 <h2>No tasks</h2>
               )}
             </section>
+            <Pagination
+              taskPerPage={taskPerPage}
+              totalTasks={tasks.length}
+              pagination={pagination}
+              page={page}
+              setPage={setPage}
+            />
           </>
         )) ||
           (screen == "new" && (
