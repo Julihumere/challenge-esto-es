@@ -47,7 +47,9 @@ export default function Inicio() {
     }).then((result) => {
       if (result.isConfirmed) {
         const newTasks = tasks.filter((task) => task.id != id);
+        const allNewTasks = allTasks.filter((task) => task.id != id);
         setTasks(newTasks);
+        setAllTasks(allNewTasks);
       }
     });
   };
